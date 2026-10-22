@@ -1,0 +1,52 @@
+{
+  "trip": {
+    "destination": "Jaipur, India",
+    "starting_city": "Hyderabad, India",
+    "travelers": 2,
+    "days": 3,
+    "start_date": "2026-11-21",
+    "budget": 30000.0,
+    "currency": "INR",
+    "style": "Culture, history, and local food",
+    "accommodation": "Budget hotel",
+    "transport": "Affordable public transportation and occasional taxis",
+    "requirements": "Comfortable pace; verify current prices and hours before booking."
+  },
+  "research": "OFFLINE SAMPLE DATA — not live research: Jaipur is known for its historic walled city, Hawa Mahal, Amber Fort, and regional cuisine. These are planning suggestions; current hours, access, weather, transport and prices were not checked. No live sources were retrieved.",
+  "budget": "Illustrative estimates, not current prices. Intercity fare is a placeholder and must be verified.\n{\n  \"categories\": {\n    \"transportation\": 3600.0,\n    \"accommodation\": 5200.0,\n    \"meals\": 7200.0,\n    \"attractions\": 5400.0,\n    \"miscellaneous\": 3000.0\n  },\n  \"total\": 24400.0,\n  \"per_traveler\": 12200.0,\n  \"budget\": 30000.0,\n  \"remaining\": 5600.0,\n  \"within_budget\": true\n}",
+  "budget_data": {
+    "categories": {
+      "transportation": 3600.0,
+      "accommodation": 5200.0,
+      "meals": 7200.0,
+      "attractions": 5400.0,
+      "miscellaneous": 3000.0
+    },
+    "total": 24400.0,
+    "per_traveler": 12200.0,
+    "budget": 30000.0,
+    "remaining": 5600.0,
+    "within_budget": true
+  },
+  "itinerary": "Day 1 (2026-11-21): Morning arrival/check-in and rest; afternoon historic center and Hawa Mahal area; evening Rajasthani dinner.\n\nDay 2: Morning Amber Fort (confirm access/hours); afternoon meal, return transfer and rest; evening flexible local market visit if open.\n\nDay 3: Morning City Palace area (confirm tickets/hours); afternoon lunch and flexible neighborhood time; evening departure transfer.\n\nEstimated total: 24400.00 INR for 2; estimated daily spending: 8133.33 INR per day for the group, averaged across the trip.\nRevision: added transfer/rest buffers and explicit fare and opening-hour verification.",
+  "critique": "{\n  \"approved\": true,\n  \"issues\": [\n    \"Opening hours and ticket prices are unverified.\",\n    \"Origin-to-destination fare is an estimate.\",\n    \"Traffic and live availability are unknown.\"\n  ],\n  \"feedback\": \"Add transfer/rest buffers and verify attraction schedules and actual fares before booking.\",\n  \"limitations\": \"Offline sample data; not live research.\"\n}",
+  "approved": true,
+  "revision_count": 1,
+  "revisions": [
+    "{\n  \"approved\": false,\n  \"issues\": [\n    \"Opening hours and ticket prices are unverified.\",\n    \"Origin-to-destination fare is an estimate.\",\n    \"Traffic and live availability are unknown.\"\n  ],\n  \"feedback\": \"Add transfer/rest buffers and verify attraction schedules and actual fares before booking.\",\n  \"limitations\": \"Offline sample data; not live research.\"\n}"
+  ],
+  "trace": [
+    "Execution mode: offline-demo.",
+    "Search skipped in offline demo; no live facts or URLs claimed.",
+    "Link A: research report passed to Budget Analyst.",
+    "Budget Analyst called calculate_trip_budget with validated numeric categories.",
+    "Link B: research and calculator-backed budget passed to Itinerary Writer.",
+    "Itinerary Writer received research + budget + feedback (revision 0).",
+    "Link C: itinerary and costs passed to Critic.",
+    "Critic evaluated the actual itinerary; approved=False.",
+    "Itinerary Writer received research + budget + feedback (revision 1).",
+    "Link C: itinerary and costs passed to Critic.",
+    "Critic evaluated the actual itinerary; approved=True."
+  ],
+  "mode": "offline-demo"
+}
